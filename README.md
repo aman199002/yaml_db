@@ -21,7 +21,9 @@ All rake tasks will then be available to you.
 ## Usage
 
     rake db:data:dump   ->   Dump contents of Rails database to db/data.yml
+    rake db:data:dump['table_name']   ->   Dump contents of specific database table to db/data.yml
     rake db:data:load   ->   Load contents of db/data.yml into the database
+    rake db:data:load['table_name']   ->   Load contents of db/data.yml to specific table
 
 Further, there are tasks db:dump and db:load which do the entire database (the equivalent of running db:schema:dump followed by db:data:load).  Also, there are other tasks recently added that allow the export of the database contents to/from multiple files (each one named after the table being dumped or loaded).
 
